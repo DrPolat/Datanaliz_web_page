@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DATANALİZ - Eğitim Programları ve Kurslar">
+    <title>DATANALİZ - Eğitimler</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: white;
+            color: #1a1a2e;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            color: #1a1a2e;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(255, 0, 0, 0.6), rgba(169, 0, 0, 0.6)), url('data_science_banner.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 10px 10px;
+            text-align: center;
+            position: relative;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero-section p {
+            font-size: 1.25rem;
+            margin-bottom: 30px;
+        }
+        .content {
+            padding: 60px 20px;
+        }
+        .content h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            color: #1a1a2e;
+        }
+        .education-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .education-box div {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .education-box div:hover {
+            transform: translateY(-10px);
+        }
+        .education-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .education-box p {
+            font-size: 1rem;
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo {
+            width: 40px;
+            height: auto;
+            margin-right: 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <img src="images/image.webp" alt="DATANALİZ Logo" class="logo">
+            <h1>DATANALİZ</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="services.html">Hizmetlerimiz</a></li>
+                <li><a href="analysis.html">Analizler</a></li>
+                <li><a href="training.html">Eğitimler</a></li>
+                <li><a href="data-science.html">Veri Bilimi</a></li>
+                <li><a href="scientific-support.html">Bilimsel Proje Desteği</a></li>
+                <li><a href="faq.html">Sıkça Sorulan Sorular (SSS)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Eğitimler</h1>
+        <p>Veri bilimi ve ilgili alanlarda kapsamlı eğitimler sunuyoruz.</p>
+    </section>
+
+    <!-- Content -->
+    <section class="content">
+        <h2>Sunulan Eğitim Türleri</h2>
+        <div class="education-box">
+            <div>
+                <h3>📊 Temel İstatistik</h3>
+                <p>İstatistiğin temel kavramlarını öğrenerek veri analizi yapma becerisi kazanın.</p>
+            </div>
+            <div>
+                <h3>🔬 Çok Değişkenli İstatistik</h3>
+                <p>Birden fazla değişkeni analiz ederek karmaşık veri setlerini anlamaya yönelik eğitim.</p>
+            </div>
+            <div>
+                <h3>🧬 Biyoistatistik</h3>
+                <p>Sağlık ve biyoloji alanındaki verileri analiz etmek için biyoistatistik yöntemleri.</p>
+            </div>
+            <div>
+                <h3>📈 Ekonometri</h3>
+                <p>Ekonomik verileri analiz ederek ekonomik modeller oluşturma ve yorumlama becerileri.</p>
+            </div>
+            <div>
+                <h3>📏 Ölçek Geliştirme</h3>
+                <p>Yeni ölçekler ve anketler geliştirme süreçleri hakkında kapsamlı bilgiler.</p>
+            </div>
+            <div>
+                <h3>📐 Yapısal Eşitlik Modellemesi</h3>
+                <p>Yapısal eşitlik modelleri ile veri analizi ve modelleme yöntemleri.</p>
+            </div>
+            <div>
+                <h3>🧮 Aktüerya</h3>
+                <p>Sigorta ve finansal riskleri değerlendirmek için aktüerya teknikleri.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 DATANALİZ Danışmanlık Sanayi ve Ticaret Limited Şirketi. Tüm hakları saklıdır.</p>
+    </footer>
+    
+</body>
+</html>
