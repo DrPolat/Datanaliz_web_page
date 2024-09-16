@@ -6,6 +6,9 @@
      <meta name="description" content="DATANALİZ - Data Science, Machine Learning, and AI Software Solutions">
      <title>DATANALİZ - Data Science & AI Solutions</title>
      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+     <link rel="icon" href="images\datanaliz.ico">
+     <link rel="stylesheet" href="css/butterfly.css">
+
      <style>
           body {
               font-family: 'Roboto', sans-serif;
@@ -15,11 +18,11 @@
               color: #333;
           }
           header {
-              background-color: white;
-              color: #1a1a2e;
-              padding: 20px;
-              text-align: center;
-          }
+            background-color: white;
+            color: #0C3D48;
+            padding: 30px;
+            text-align: center;
+        }
           nav ul {
               list-style: none;
               padding: 0;
@@ -34,13 +37,13 @@
               font-weight: bold;
           }
           .hero-section {
-              background: linear-gradient(rgba(255, 0, 0, 0.6), rgba(169, 0, 0, 0.6)), url('data_science_banner.jpg');
-              background-size: cover;
-              background-position: center;
-              color: white;
-              padding: 10px 10px;
-              text-align: center;
-              position: relative;
+            background: #0C3D48 ;
+            background-size: cover;
+            background-position: center;
+            color: #a4bf9d;
+            padding: 10px 10px;
+            text-align: center;
+            position: relative;
           }
           .hero-section h1 {
               font-size: 3rem;
@@ -103,14 +106,15 @@
             justify-content: center;
         }
         .logo {
-            width: 40px;
+            width: 60px;
             height: auto;
             margin-right: 10px;
         }
         header h1 {
             margin: 0;
-            font-size: 2rem;
+            font-size: 3rem;
         }
+
       </style>
 </head>
 <body>
@@ -122,12 +126,19 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="services.html">Hizmetlerimiz</a></li>
-                <li><a href="analysis.html">Analizler</a></li>
-                <li><a href="training.html">Eğitimler</a></li>
-                <li><a href="data-science.html">Veri Bilimi</a></li>
-                <li><a href="scientific-support.html">Bilimsel Proje Desteği</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+                <li class="dropdown">
+                    <a href="services.html">Hizmetlerimiz</a>
+                    <div class="dropdown-content">
+                        <a href="analysis.html">İstatistiksel Analizler</a>
+                        <a href="data-science.html">Veri Bilimi</a>
+                        <a href="training.html">Eğitimler</a>
+                        <a href="scientific-support.html">Danışmanlık</a>
+                        <a href="sdg-report.html">Raporlarımız</a>
+                    </div>
+                </li>
+                <li><a href="projects.html">Projelerimiz</a>
+
                 <li><a href="faq.html">Sıkça Sorulan Sorular (SSS)</a></li>
             </ul>
         </nav>
@@ -141,7 +152,7 @@
 
     <!-- Content -->
     <section class="content">
-        <h2>Sunulan Analiz Türleri</h2>
+        <h2></h2>
         <div class="analysis-box">
             <div>
                 <h3>🏆 İstatistiksel Analizler</h3>
@@ -152,20 +163,20 @@
                 <p>Deneylerinizin etkinliğini ölçmek için güç analizleri gerçekleştiriyoruz.</p>
             </div>
             <div>
-                <h3>📊 Temel İstatistik</h3>
-                <p>Veri setlerinizin temel istatistiksel özelliklerini analiz ediyoruz.</p>
+                <h3>📊 Etki analizleri</h3>
+                <p>Doğrusal Regresyon, Lojistik Regresyon, Ordinal Probit, Tobit Analizi, Ridit Analizi, Mekansal Regresyon, Dairesel Regresyon, Zaman Serisi Modelleri vb.</p>
             </div>
             <div>
-                <h3>🎯 Temel Veri Bilimi</h3>
-                <p>Veri biliminin temel kavramlarını kullanarak analizler yapıyoruz.</p>
+                <h3>🎯 Grup karşılaştırma analizleri</h3>
+                <p>Student t-testi,  Varyans Analizleri, Parametrik Olmayan Analizler, Uyuşum Testleri, Normallik Testleri, Kategorik Veri Analizleri vb.)</p>
             </div>
             <div>
                 <h3>📉  Ekonometrik Analizler</h3>
-                <p>Ekonomik verilerinizi detaylı bir şekilde analiz ediyoruz.</p>
+                <p>Unit Root Testleri, Cointegration Testlerini kullanarak ekonomik verilerinizi detaylı bir şekilde analiz ediyoruz.</p>
             </div>
             <div>
                 <h3>🧪 Deney Tasarımı Analizleri</h3>
-                <p>Deneylerinizi en iyi şekilde tasarlamanız için analizler sağlıyoruz.</p>
+                <p>Varyans Analizi, Regresyon Analizi (Kruskal-Wallis Testi, Mann-Whitney U Testi) yapılan araştırmanın belirtilen analizler sonucunda güvenilirlik ve geçerliliğini arttırmak amaçlanmıştır.</p>
             </div>
             <div>
                 <h3>🖊 Ölçek ve Anket Analizleri</h3>
@@ -177,11 +188,13 @@
             </div>
             <div>
                 <h3>🔎 Veri Toplama</h3>
-                <p>İhtiyaçlarınıza uygun veri toplama çözümleri sunuyoruz.</p>
+                <p>Çevrimiçi Anketler, Yüz Yüze Anketler, Literatür Tarama, Web ve Sosyal Medya Üzerinden Veri Toplama</p>
             </div>
             <div>
-                <h3>📈 Regresyon</h3>
-                <p>Veri setlerinizdeki ilişkileri modelleyerek regresyon analizleri yapıyoruz.</p>
+                <h3>📈 Korelasyon analizleri </h3>
+                <p>Veri setlerinizdeki ilişkileri modelleyerek Korelasyon analizleri yapıyoruz.
+                Pearson Momentler Çarpımı Korelasyonu Analizi, Spearman Rho Korelasyon Analizi vb.
+                </p>
             </div>
             <div>
                 <h3>⏳ Zaman Serileri</h3>
@@ -189,15 +202,20 @@
             </div>
             <div>
                 <h3>⛏ Metin Madenciliği</h3>
-                <p>Metin verilerinizden anlamlı bilgiler çıkarıyoruz.</p>
+                <p>K-En Yakın Komşu, Large Language Models ve Natural Language Processing teknikleri kullanarak büyük metin veri setlerini analiz ederek en iyi çözümü sunmaktayız.</p>
             </div>
             <div>
                 <h3>📖 Literatür Araştırma</h3>
-                <p>Bilimsel literatürü tarayarak kapsamlı araştırmalar yapıyoruz.</p>
+                <p>Bilimsel literatürü tarayarak kapsamlı araştırmalar yapıyoruz.
+                </p>
             </div>
             <div>
-                <h3>🤝🏻 Geçerlik ve Güvenirlik Analizleri</h3>
-                <p>Analizlerinizin geçerlik ve güvenirliğini değerlendiriyoruz.</p>
+                <h3>🤝🏻 Güvenirlik Analizleri</h3>
+                <p>Cronbach’s Alpha, Split-Half</p>
+            </div>
+            <div>
+                <h3>🤝🏻 Geçerlilik Analizleri</h3>
+                <p>İçsel Geçerlilik, Yüzeysel Geçerlilik, Kapsam Geçerliliği, Kriter Geçerliliği</p>
             </div>
         </div>
     </section>

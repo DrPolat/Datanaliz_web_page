@@ -6,12 +6,15 @@
     <meta name="description" content="DATANALİZ - Bilimsel Proje Desteği Hizmetleri">
     <title>DATANALİZ - Bilimsel Proje Desteği</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images\datanaliz.ico">
+    <link rel="stylesheet" href="css/butterfly.css">
+
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa;
+            background-color: white;
             color: #333;
         }
         header {
@@ -34,10 +37,10 @@
             font-weight: bold;
         }
         .hero-section {
-            background: linear-gradient(rgba(183, 255, 127, 0.6), rgba(0, 0, 0, 0.6)), url('scientific_support_banner.jpg');
+            background: #0C3D48 ;
             background-size: cover;
             background-position: center;
-            color: white;
+            color: #a4bf9d;
             padding: 10px 10px;
             text-align: center;
             position: relative;
@@ -103,6 +106,20 @@
             margin: 0;
             font-size: 2rem;
         }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo {
+            width: 60px;
+            height: auto;
+            margin-right: 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
     </style>
 </head>
 <body>
@@ -114,12 +131,19 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="services.html">Hizmetlerimiz</a></li>
-                <li><a href="analysis.html">Analizler</a></li>
-                <li><a href="training.html">Eğitimler</a></li>
-                <li><a href="data-science.html">Veri Bilimi</a></li>
-                <li><a href="scientific-support.html">Bilimsel Proje Desteği</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+                <li class="dropdown">
+                    <a href="services.html">Hizmetlerimiz</a>
+                    <div class="dropdown-content">
+                        <a href="analysis.html">İstatistiksel Analizler</a>
+                        <a href="data-science.html">Veri Bilimi</a>
+                        <a href="training.html">Eğitimler</a>
+                        <a href="scientific-support.html">Danışmanlık</a>
+                        <a href="sdg-report.html">Raporlarımız</a>
+                    </div>
+                </li>
+                <li><a href="projects.html">Projelerimiz</a>
+
                 <li><a href="faq.html">Sıkça Sorulan Sorular (SSS)</a></li>
             </ul>
         </nav>
@@ -127,13 +151,13 @@
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <h1>Bilimsel Proje Desteği</h1>
+        <h1>Bilimsel Proje Desteği ve Danışmanlık</h1>
         <p>Bilimsel projelerinizi başarılı bir şekilde hazırlamanız ve yönetmeniz için kapsamlı destek sağlıyoruz.</p>
     </section>
 
     <!-- Content -->
     <section class="content">
-        <h2>Sunulan Destek Hizmetleri</h2>
+        <h2></h2>
         <div class="support-box">
             <div>
                 <h3>📋 Proje Hazırlama</h3>
@@ -148,12 +172,20 @@
                 <p>Projelerinizin tüm aşamalarında etkili bir yönetim desteği sunarak başarıya ulaşmanızı sağlıyoruz.</p>
             </div>
             <div>
+                <h3>🗃️ Literatür Araştırma</h3>
+                <p>Akademik veri tabanları taranıp ilgili kaynaklar incelendikten sonra bilgi birikimi kolaylığı sağlamaktayız.</p>
+            </div>
+            <div>
                 <h3>🔍 Proje Yöntem ve Analizleri</h3>
                 <p>Projelerinizin yöntem ve analiz aşamalarında detaylı ve bilimsel destek sağlıyoruz.</p>
             </div>
             <div>
                 <h3>🗂 Proje İş Paketleri Hazırlama</h3>
                 <p>Projelerinizin iş paketlerini oluşturarak, görev ve sorumlulukları belirliyoruz.</p>
+            </div>
+            <div>
+                <h3>🌟 Bilimsel Dergi Yayın Desteği</h3>
+                <p>Makale Hazırlık Desteği, Dergi Seçimi ve Gönderimi, Etik ve Uygunluk Kontrolleri vb.</p>
             </div>
             <div>
                 <h3>📅 Proje Takvimi</h3>

@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="images\datanaliz.ico">
     <link rel="stylesheet" href="css/butterfly.css">
+
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -91,7 +92,7 @@
             text-align: center;
         }
         .logo-container {
-            display: fleft;
+            display: flex;
             align-items: center;
             justify-content: center;
         }
@@ -111,7 +112,6 @@
             border: none; border-radius: 
             5px; cursor: pointer
         }
-
         .logo-container {
             display: flex;
             align-items: center;
@@ -131,97 +131,61 @@
 <body>
     <!-- Header -->
     <header>
-        <div class="logo-container">
-            <img src="images/image.webp" alt="DATANALİZ Logo" class="logo">
-            <h1>DATANALİZ</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html"><i class="fas fa-home"></i>Anasayfa</a></li>
-                <li class="dropdown">
-                    <a href="services.html">Hizmetlerimiz</a>
-                    <div class="dropdown-content">
-                        <a href="analysis.html">İstatistiksel Analizler</a>
-                        <a href="data-science.html">Veri Bilimi</a>
-                        <a href="training.html">Eğitimler</a>
-                        <a href="scientific-support.html">Danışmanlık</a>
-                        <a href="sdg-report.html">Raporlarımız</a>
-                    </div>
-                </li>
-                <li><a href="projects.html">Projelerimiz</a>
+     <div class="logo-container">
+         <img src="images/image.webp" alt="DATANALİZ Logo" class="logo">
+         <h1>DATANALİZ</h1>
+     </div>
+     <nav>
+         <ul>
+             <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+             <li class="dropdown">
+                 <a href="services.html">Hizmetlerimiz</a>
+                 <div class="dropdown-content">
+                     <a href="analysis.html">İstatistiksel Analizler</a>
+                     <a href="data-science.html">Veri Bilimi</a>
+                     <a href="training.html">Eğitimler</a>
+                     <a href="scientific-support.html">Danışmanlık</a>
+                     <a href="sdg-report.html">Raporlarımız</a>
+                 </div>
+             </li>
+             <li><a href="projects.html">Projelerimiz</a>
 
-                <li><a href="faq.html">Sıkça Sorulan Sorular (SSS)</a></li>
-            </ul>
-        </nav>
-    </header>
+             <li><a href="faq.html">Sıkça Sorulan Sorular (SSS)</a></li>
+         </ul>
+     </nav>
+ </header>
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <h1>Hizmetlerimiz</h1>
-        <p>Üstün kaliteli analiz, yazılım ve danışmanlık hizmetlerimizle yanınızdayız.</p>
+        <h1>Kamu, STK ve Özel Kuruluşlar İçin Rapor Hazırlama</h1>
+        <p></p>
     </section>
 
     <!-- Content -->
     <section class="content">
-        <h2></h2>
+        <h2>Raporlama Hizmetlerimiz</h2>
         <div class="service-box">
             <div>
-                <h3>İstatistiksel Analizler</h3>
-                <p>Verilerinizin derinlemesine incelenmesi için kapsamlı istatistiksel analizler sunuyoruz.</p>
-                <a href="analysis.html">
+                <h3>Kamu Kurumları İçin Raporlama</h3>
+                <p>Kamu kuruluşlarına yönelik stratejik raporlar hazırlıyor, performans değerlendirmeleri yapıyoruz.</p>
+            </div>
+            <div>
+               <h3>VLR Raporları</h3>
+               <p>VLR (Gönüllü Yerel Değerlendirme) raporları ile yerel yönetimlerin sürdürülebilir kalkınma hedeflerine katkılarını analiz ediyoruz.
+               </p>
+               <a href="vlr-example.html">
                     <button class="small_button">
-                        Daha Fazla Bilgi
+                        VLR raporlarımız
                     </button>
                 </a>
+           </div>
+            <div>
+                <h3>STK'lar İçin Özel Raporlar</h3>
+                <p>Sivil Toplum Kuruluşları (STK) için saha çalışmaları ve veri analizi bazlı raporlar sunuyoruz. Özellikle sosyal ve çevresel etkiler üzerine derinlemesine analizler yapıyoruz.</p>
             </div>
             <div>
-                <h3>Veri Bilimi</h3>
-                <p>Veri bilimi yöntemlerini kullanarak veri setleriniz üzerinde kapsamlı analizler gerçekleştiriyoruz.</p>
-                <a href="data-science.html">
-                    <button class="small_button">
-                        Daha Fazla Bilgi
-                    </button>
-                </a>
-            </div>
-            <div>
-                <h3>Eğitimler</h3>
-                <p>Veri bilimi, analiz yöntemleri ve daha fazlası için profesyonel eğitimler sunuyoruz.</p>
-                <a href="training.html">
-                    <button class="small_button">
-                        Daha Fazla Bilgi
-                    </button>
-                </a>
-            </div>
-            <div>
-                <h3>Bilimsel Proje Desteği ve Danışmanlık</h3>
-                <p>Veri analizi ve bilimsel çalışmalar için profesyonel danışmanlık hizmetleri sunuyoruz.</p>
-                <a href="scientific-support.html">
-                    <button class="small_button">
-                        Daha Fazla Bilgi
-                    </button>
-                </a>
-            </div>
-            <div>
-                <h3>Kamu, STK ve özel Kuruluşlar için Rapor Hazırlama</h3>
-                <p>Kamu, STK ve özel kuruluşlar için profesyonel rapor hazırlama hizmetleri sunuyoruz.
-                    Raporun amacını ve hedef kitlesini belirlenip veri analizi yapılmaktadır. 
-                </p>
-                <a href="sdg-report.html">
-                    <button class="small_button">
-                        Daha Fazla Bilgi
-                    </button>
-                </a>
-            </div>
-            <div>
-                <h3>Çevre ve Sürdürülebilirlik Çalışmaları</h3>
-                <p>Çevresel Etki Değerlendirilmesi, Sürdürülebilir Kaynak Yönetimi, Karbon Ayak İzi ve İklim 
-                    Değişikliği, Sürdürülebilir Tarım ve Gıda Sistemleri, Sürdürülebilir İş Modelleri vb.
-                    </p>
-            </div>
-            <div>
-                <h3>Yazılım Geliştirme</h3>
-                <p>İhtiyaçlarınıza özel, modern yazılım çözümleri geliştiriyoruz.
-                    </p>
+                <h3>Sağlıklı Kentler Raporlaması</h3>
+                <p>Sağlıklı kentler inisiyatifi kapsamında, şehirlerin sağlık, çevre ve sosyal politikaları üzerine analizler gerçekleştiriyor ve gelişim alanlarını belirliyoruz.</p>
             </div>
         </div>
     </section>

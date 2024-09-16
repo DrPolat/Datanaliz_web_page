@@ -1,0 +1,60 @@
+.projects-section {
+     padding: 60px 20px;
+     background-color: #f1f1f1;
+ }
+
+ .project-box {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Minimum genişlik artırıldı */
+     gap: 25px; /* Kutular arası boşluk artırıldı */
+     text-align: center;
+ }
+
+ .project-item {
+     position: relative;
+     padding: 20px;  /* İç boşluk artırıldı */
+     background-color: white;
+     border-radius: 10px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     cursor: pointer;
+     overflow: hidden;
+     min-height: 350px; /* Minimum yüksekliği artırarak kutuyu büyüttük */
+ }
+
+ .projects-section h2 {
+     text-align: center; /* Yatay olarak ortalar */
+     font-size: 2.5rem;
+     color: #0C3D48;
+ }
+ .project-item h3 {
+     text-align: center;
+     margin-bottom: 40px;
+     font-size: 2rem;
+     color: #0C3D48;
+     letter-spacing: 1px; /* Başlıklara hafif aralık ekledik */
+ }
+
+ .project-item:hover {
+     transform: translateY(-10px);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+ }
+
+ .project-description {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background-color: rgba(0, 0, 0, 0.8);
+     color: white;
+     padding: 20px;
+     opacity: 0;
+     transform: translateY(100%);
+     transition: opacity 0.4s ease, transform 0.4s ease;
+     max-height: 200px;
+     overflow: hidden;
+ }
+
+ .project-item:hover .project-description {
+     opacity: 1;
+     transform: translateY(0);
+ }

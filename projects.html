@@ -219,6 +219,66 @@
             font-weight: bold;
         }
         
+        .projects-section {
+            padding: 60px 20px;
+            background-color: #f1f1f1;
+        }
+
+        .project-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Minimum genişlik artırıldı */
+            gap: 25px; /* Kutular arası boşluk artırıldı */
+            text-align: center;
+        }
+
+        .project-item {
+            position: relative;
+            padding: 20px;  /* İç boşluk artırıldı */
+            background-color: white;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            overflow: hidden;
+            min-height: 350px; /* Minimum yüksekliği artırarak kutuyu büyüttük */
+        }
+
+        .projects-section h2 {
+            text-align: center; /* Yatay olarak ortalar */
+            font-size: 2.5rem;
+            color: #0C3D48;
+        }
+        .project-item h3 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: #0C3D48;
+            letter-spacing: 1px; /* Başlıklara hafif aralık ekledik */
+        }
+
+        .project-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: opacity 0.4s ease, transform 0.4s ease;
+            max-height: 200px;
+            overflow: hidden;
+        }
+
+        .project-item:hover .project-description {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
     </style>
 </head>
@@ -250,71 +310,24 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section" id="home">
-        <h1>İşletmeler için Veri Bilimi ve Yapay Zeka Çözümleri</h1>
-        <p></p>
-    </section>
-
-    <!-- About Section -->
-    <section class="about-section">
-        <div class="about-content">
-            <div class="about-text">
-                <h2>Hakkımızda</h2>
-                <p>Datanaliz; danışmanlık, veri analitiği, yazılım geliştirme ve bilimsel projeler alanında uzmanlaşmış bir şirket olarak kamu kurumları, özel sektör ve akademik projelerde, müşterilerimize en doğru ve güvenilir çözümleri sunmak için çalışıyoruz.</p>
-                <h3>Misyonumuz:</h3>
-                <p><strong>Veri bilimi, yapay zeka ve istatistiksel analizleri kullanarak, işletmelerin ve projelerin daha etkili kararlar almasını sağlamak.</strong> Yapay zeka destekli uygulamalar üretmek. Kaliteli analizler ve yenilikçi çözümler sunarak, müşterilerimizin başarıya ulaşmasına katkıda bulunmak.</p>
-                <h3>Vizyonumuz:</h3>
-                <p><strong>Veri bilimi ve yazılım çözümlerimizle, iş dünyasına ve bilimsel araştırmalara değer katmak, teknolojik yeniliklerle fark yaratmak.</strong></p>
-                <p>📍 Türkiye merkezli olarak, tüm dünyaya hizmet vermekteyiz.</p>
-            </div>
-            <img src="images\tables123.jpeg" alt="Bilgisayar Başında Çalışan Mutlu İnsanlar">
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section class="services-section">
-        <h2></h2>
-        <div class="service-box">
-            <div>
-                <h3>📊  Veri Bilimi ve Analizi</h3>
-                <p>Büyük veri kaynaklarınızı analiz ederek, anlamlı ve uygulanabilir içgörüler sağlıyoruz. stratejik kararlarınızı veriye dayalı hale getiriyoruz.</p>
-            </div>
-            <div>
-                <h3>💻 Yazılım Geliştirme</h3>
-                <p>İhtiyaçlarınıza özel, modern yazılım çözümleri geliştiriyoruz.</p>
-            </div>
-            <div>
-                <h3>🤖 Makine Öğrenimi ve Derin Öğrenme</h3>
-                <p>Yapay zeka modelleriyle iş süreçlerinizi optimize ediyoruz.</p>
-            </div>
-            <div>
-                <h3>🧠 Yapay Zeka Çözümleri</h3>
-                <p>Gelişmiş yapay zeka uygulamalarıyla otomasyon sağlıyoruz.</p>
-            </div>
-            <div>
-                <h3>🎓 Eğitim ve Danışmanlık</h3>
-                <p>Veri bilimi, makine öğrenimi ve yazılım konularında eğitim ve danışmanlık hizmetleri sunuyoruz.</p>
-            </div>
-        </div>
-    </section>
-
      <!-- Projects Section -->
-    
-
-    <!-- Contact Section -->
-    <section class="contact-section">
-        <h2>İletişim</h2>
-        <div class="contact-info">
-            <p><i class="fas fa-envelope"></i> <strong></strong> <a href="mailto:datanalizco@gmail.com">datanalizco@gmail.com</a></p>
-            <p><i class="fab fa-instagram"></i> <strong></strong> <a href="https://www.instagram.com/datanalizco" target="_blank">@datanalizco</a></p>
-            <p><i class="bi bi-twitter-x"></i> <strong>𝕏</strong> <a href="https://x.com/datanalizco" target="_blank"> @datanalizco</a></p>
-            <p><i class="fas fa-phone-alt"></i> <strong></strong> <a href="tel:+905353943980">+90 535 394 39 80</a></p>
-        </div>
+     <section class="projects-section">
+        <h2></h2>
+        <div class="project-box">
+            <div class="project-item">
+                <h3>Annus Mirabilis</h3>
+                <p>Film ve dizi sektörüne yönelik geliştirdiğimiz "Annus Mirabilis" projesi, aktör, aktris ve yönetmenlerin kariyerlerindeki en başarılı yılları tahmin etmek amacıyla makine öğrenmesi tekniklerini kullanmaktadır. Proje, sektör profesyonellerinin geçmiş performans verilerini analiz ederek, kariyer zirvelerini belirlemeye yardımcı olur. Böylece sektör dinamiklerine dair öngörüler sunarak, gelecekteki projeler için stratejik karar alma süreçlerine katkı sağlamayı hedefler.</p>
+            </div>
+            <div class="project-item">
+                <h3>Akciğer Grafilerinden Hastalık Tespiti</h3>
+                <p>Computer Vision teknikleri kullanarak akciğer grafilerinden hastalıkların otomatik tespitini amaçlayan bir çalışmadır. Proje, derin öğrenme ve yapay sinir ağları (CNN) ile tıbbi görüntülerdeki belirgin ve gizli hastalık belirtilerini tespit etmeyi hedeflemektedir. Henüz geliştirme aşamasında olan bu çalışma, tamamlandığında sağlık uzmanlarına daha hızlı ve güvenilir teşhis desteği sunmayı amaçlamaktadır.</p>
+            </div>
+            <div class="project-item">
+                <h3>Holter Verilerinden Kalp Krizi Tahmini</h3>
+                <p>Makine öğrenimi teknikleri kullanarak Holter cihazlarından elde edilen verilerle kalp krizi riskini önceden tahmin etmeyi amaçlayan bir çalışmadır. Proje, kalp ritmi ve diğer kardiyovasküler verileri analiz ederek, risk faktörlerini erken dönemde tespit etmeyi hedeflemektedir. Geliştirilmekte olan bu sistem, doktorların hastaları için daha proaktif tedavi planları oluşturmasına yardımcı olabilecek önemli bir karar destek aracı olmayı amaçlamaktadır.</p>
+            </div>
+        </div>     <!-- <p class="project-description"> ile kayan yazıları ekleyebilirsin -->
     </section>
-    
-    
-    
 
     <!-- Footer -->
     <footer>

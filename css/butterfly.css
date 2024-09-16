@@ -1,0 +1,135 @@
+.small_button {
+     background-color: #0C3D48; 
+     color: white; 
+     padding: 10px 20px; 
+     border: none; border-radius: 
+     5px; cursor: pointer
+ }
+
+/* Ok simgesinin başlangıç durumu */
+.arrow {
+    display: inline-block;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+
+/* Menü öğesi üzerine gelindiğinde ok simgesinin yönünü değiştir */
+.dropdown:hover .arrow {
+    transform: rotate(90deg); /* Ok simgesini sağdan aşağıya çevirir */
+}
+/* Services Menu Styling */
+.services-menu {
+    width: 250px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/*width: 250px;: Menü genişliği 250px.
+background-color: #f1f1f1;: Arka plan rengi açık gri (#f1f1f1).
+border-radius: 5px;: Köşeler hafif yuvarlatılmış (5px).
+padding: 10px;: Menü içindeki boşluk.
+position: absolute;: Menü sayfanın belirli bir noktasına kesin olarak yerleştirilir.
+top: 60px; ve right: 20px;: Menü, sayfanın üstünden 60px ve sağından 20px uzaklıkta.
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);: Menüye hafif bir gölge efekti ekler.*/
+
+.services-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services-menu ul li {
+    margin-bottom: 20px;
+}
+
+.services-menu ul li a {
+    text-decoration: none;
+    color: #1a1a2e;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Bağlantıya fare ile gelindiğinde uygulanacak stil: */
+.services-menu ul li a:hover {
+    background-color: #ff4b5c;
+    color: white
+}
+
+nav {
+    display: flex; /* Flexbox düzeni */
+    justify-content: center; /* Menüyü ortalar */
+}
+nav ul {
+    list-style: none; /* Liste işaretlerini kaldırır */
+    padding: 0; /* İç boşluğu sıfırlar */
+    margin: 10px; /* Dış boşluğu sıfırlar */
+    display: flex; /* Menü öğelerini yatayda hizalar */
+}
+nav ul li {
+    margin-bottom: 15px;
+    position: relative;
+}
+nav ul li a {
+    color: #1a1a2e;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+nav ul li a:hover {
+    background-color: #ff4b5c;
+    color: white;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    background-color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    min-width: 180px;
+}
+/* display: none;: Başlangıçta gizlidir.
+
+position: absolute;: Menüyü belirli bir konuma yerleştirir.
+
+top: 100%;: Menü, üstündeki elemanın hemen altına yerleştirilir.
+
+right: 0;: Sağdan sıfır uzaklıkta.
+
+background-color: white;: Arka plan rengi beyaz.
+
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);: Hafif */
+
+.dropdown-content a {
+    color: #1a1a2e;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+.dropdown-content a:hover {
+    background-color: #ff4b5c;
+    color: white;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+

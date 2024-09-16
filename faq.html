@@ -6,6 +6,9 @@
     <meta name="description" content="DATANALİZ - Sıkça Sorulan Sorular (SSS)">
     <title>DATANALİZ - Sıkça Sorulan Sorular (SSS)</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images\datanaliz.ico">
+    <link rel="stylesheet" href="css/butterfly.css">
+
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -16,8 +19,8 @@
         }
         header {
             background-color: white;
-            color: #1a1a2e;
-            padding: 20px;
+            color: #0C3D48;
+            padding: 30px;
             text-align: center;
         }
         nav ul {
@@ -34,10 +37,10 @@
             font-weight: bold;
         }
         .hero-section {
-            background: linear-gradient(rgba(102, 0, 255, 0.6), rgba(244, 0, 0, 0.6)), url('scientific_support_banner.jpg');
+            background: #0C3D48 ;
             background-size: cover;
             background-position: center;
-            color: white;
+            color: #a4bf9d;
             padding: 10px 10px;
             text-align: center;
             position: relative;
@@ -95,13 +98,13 @@
             justify-content: center;
         }
         .logo {
-            width: 40px;
+            width: 60px;
             height: auto;
             margin-right: 10px;
         }
         header h1 {
             margin: 0;
-            font-size: 2rem;
+            font-size: 3rem;
         }
     </style>
 </head>
@@ -114,12 +117,19 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="services.html">Hizmetlerimiz</a></li>
-                <li><a href="analysis.html">Analizler</a></li>
-                <li><a href="training.html">Eğitimler</a></li>
-                <li><a href="data-science.html">Veri Bilimi</a></li>
-                <li><a href="scientific-support.html">Bilimsel Proje Desteği</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+                <li class="dropdown">
+                    <a href="services.html">Hizmetlerimiz</a>
+                    <div class="dropdown-content">
+                        <a href="analysis.html">İstatistiksel Analizler</a>
+                        <a href="data-science.html">Veri Bilimi</a>
+                        <a href="training.html">Eğitimler</a>
+                        <a href="scientific-support.html">Danışmanlık</a>
+                        <a href="sdg-report.html">Raporlarımız</a>
+                    </div>
+                </li>
+                <li><a href="projects.html">Projelerimiz</a>
+
                 <li><a href="faq.html">Sıkça Sorulan Sorular (SSS)</a></li>
             </ul>
         </nav>

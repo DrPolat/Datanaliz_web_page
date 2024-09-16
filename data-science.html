@@ -6,6 +6,9 @@
     <meta name="description" content="DATANALİZ - Veri Bilimi Eğitimleri ve Kurslar">
     <title>DATANALİZ - Veri Bilimi</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/datanaliz.ico">
+    <link rel="stylesheet" href="css/butterfly.css">
+
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -16,8 +19,8 @@
         }
         header {
             background-color: white;
-            color: #1a1a2e;
-            padding: 20px;
+            color: #0C3D48;
+            padding: 30px;
             text-align: center;
         }
         nav ul {
@@ -34,10 +37,10 @@
             font-weight: bold;
         }
         .hero-section {
-            background: linear-gradient(rgba(255, 0, 0, 0.6), rgba(169, 0, 0, 0.6)), url('data_science_banner.jpg');
+            background: #0C3D48 ;
             background-size: cover;
             background-position: center;
-            color: white;
+            color: #a4bf9d;
             padding: 10px 10px;
             text-align: center;
             position: relative;
@@ -95,13 +98,13 @@
             justify-content: center;
         }
         .logo {
-            width: 40px;
+            width: 60px;
             height: auto;
             margin-right: 10px;
         }
         header h1 {
             margin: 0;
-            font-size: 2rem;
+            font-size: 3rem;
         }
     </style>
 </head>
@@ -114,12 +117,19 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="services.html">Hizmetlerimiz</a></li>
-                <li><a href="analysis.html">Analizler</a></li>
-                <li><a href="training.html">Eğitimler</a></li>
-                <li><a href="data-science.html">Veri Bilimi</a></li>
-                <li><a href="scientific-support.html">Bilimsel Proje Desteği</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+                <li class="dropdown">
+                    <a href="services.html">Hizmetlerimiz</a>
+                    <div class="dropdown-content">
+                        <a href="analysis.html">İstatistiksel Analizler</a>
+                        <a href="data-science.html">Veri Bilimi</a>
+                        <a href="training.html">Eğitimler</a>
+                        <a href="scientific-support.html">Danışmanlık</a>
+                        <a href="sdg-report.html">Raporlarımız</a>
+                    </div>
+                </li>
+                <li><a href="projects.html">Projelerimiz</a>
+
                 <li><a href="faq.html">Sıkça Sorulan Sorular (SSS)</a></li>
             </ul>
         </nav>
@@ -128,56 +138,48 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <h1>Veri Bilimi</h1>
-        <p>Veri bilimi ve yapay zeka alanında derinlemesine eğitimler sunuyoruz.</p>
+        <p>İşinize değer katacak veri odaklı çözümler geliştirerek verilerinizden en iyi sonuçları elde etmenizi sağlıyoruz.</p>
     </section>
 
     <!-- Content -->
     <section class="content">
-        <h2>Sunulan Eğitim Türleri</h2>
+        <h2></h2>
         <div class="data-science-box">
             <div>
-                <h3>📊 Temel Veri Bilimi</h3>
-                <p>Veri biliminin temellerini öğrenerek veri analizi yapma becerisi kazanın.</p>
+                <h3>🧠 Makine Öğrenmesi</h3>
+                <p>Makine öğrenmesi algoritmalarını ve uygulamaları ile kendi yapay zeka modelinizi eğitiyoruz</p>
             </div>
             <div>
-                <h3>🔍 Büyük Veri</h3>
-                <p>Geniş veri setlerini analiz etme ve büyük veri çözümleri üzerine eğitim.</p>
+                <h3>🇦🇮 Yapay Zeka</h3>
+                <p>Yapay zeka algoritmalarını ve uygulamalarını kullanarak veri bilimi alanında farklı bir bakış açısı sunuyoruz.</p>
             </div>
             <div>
-                <h3>🤖 Makine Öğrenmesi</h3>
-                <p>Makine öğrenmesi algoritmalarını ve uygulamalarını derinlemesine öğrenin.</p>
+                <h3>🔢 Kümeleme Analizi</h3>
+                <p>K-Means, Hiyerarşik Kümeleme, DBSCAN vb.</p>
             </div>
             <div>
-                <h3>🔢 Kümeleme Algoritmaları</h3>
-                <p>Veri kümeleme yöntemlerini kullanarak veri setlerinizi gruplandırın.</p>
+                <h3>📈 Sınıflandırma Analizi</h3>
+                <p>Karar ağaçları, Rastgele Orman, Yapay Sinir Ağları vb.</p>
             </div>
             <div>
-                <h3>📈 Sınıflama Algoritmaları</h3>
-                <p>Veri sınıflama teknikleri ile verilerinizi analiz edin ve modelleyin.</p>
+                <h3>⏳ Zaman Serileri Analizi</h3>
+                <p>ARIMA, SARIMA ve GARCH modelleri ile zaman serilerini inceleyin.</p>
             </div>
             <div>
-                <h3>🔗 Birliktelik Kuralı</h3>
-                <p>Verilerdeki ilişki ve birliktelikleri keşfetmek için analizler yapın.</p>
+                <h3>🌐 Veri Toplama</h3>
+                <p>Çevrimiçi Anketler, Yüz Yüze Anketler, Literatür Tarama, Web ve Sosyal Medya Üzerinden Veri Toplama</p>
             </div>
             <div>
-                <h3>🗂 Metin Madenciliği</h3>
-                <p>Metin verilerinden anlamlı bilgileri çıkararak analiz edin.</p>
+                <h3>🔍 Keşifsel Veri Analizi</h3>
+                <p>Grafik, histogram gibi araçlarla veriyi görselleştirerek yapılarını keşfederiz.</p>
             </div>
             <div>
-                <h3>💡 Fikir Madenciliği</h3>
-                <p>Verilerden yenilikçi fikirler ve trendler çıkarma yöntemlerini öğrenin.</p>
+                <h3>🔬 Hipotez Testi</h3>
+                <p>İstatistiksel olarak veriler arasında anlamlı bir fark olup olmadığını gözlemlemek için hipotez testi yöntemlerini kullanın</p>
             </div>
             <div>
-                <h3>⏳ Zaman Serileri</h3>
-                <p>Zaman serisi verilerini analiz ederek gelecekteki eğilimleri tahmin edin.</p>
-            </div>
-            <div>
-                <h3>🔮 Tahmin Modelleri</h3>
-                <p>Veri tahmini ve modelleme konusunda bilgi ve becerilerinizi geliştirin.</p>
-            </div>
-            <div>
-                <h3>🤯 Yapay Zeka</h3>
-                <p>Yapay zeka algoritmalarını ve uygulamalarını öğrenerek veri bilimi alanında derinleşin.</p>
+                <h3>📈 Büyük Veri Analizi</h3>
+                <p>Veri işleme, temizleme, makine öğrenimi ve veri madenciliği ile iş stratejilerinizi optimize ediyoruz</p>
             </div>
         </div>
     </section>

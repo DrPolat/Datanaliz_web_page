@@ -6,6 +6,10 @@
     <meta name="description" content="DATANALİZ - Eğitim Programları ve Kurslar">
     <title>DATANALİZ - Eğitimler</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images\datanaliz.ico">
+    <link rel="stylesheet" href="css/butterfly.css">
+
+
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -16,8 +20,8 @@
         }
         header {
             background-color: white;
-            color: #1a1a2e;
-            padding: 20px;
+            color: #0C3D48;
+            padding: 30px;
             text-align: center;
         }
         nav ul {
@@ -34,10 +38,10 @@
             font-weight: bold;
         }
         .hero-section {
-            background: linear-gradient(rgba(255, 0, 0, 0.6), rgba(169, 0, 0, 0.6)), url('data_science_banner.jpg');
+            background: #0C3D48 ;
             background-size: cover;
             background-position: center;
-            color: white;
+            color: #a4bf9d;
             padding: 10px 10px;
             text-align: center;
             position: relative;
@@ -95,13 +99,13 @@
             justify-content: center;
         }
         .logo {
-            width: 40px;
+            width: 60px;
             height: auto;
             margin-right: 10px;
         }
         header h1 {
             margin: 0;
-            font-size: 2rem;
+            font-size: 3rem;
         }
     </style>
 </head>
@@ -114,12 +118,19 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="services.html">Hizmetlerimiz</a></li>
-                <li><a href="analysis.html">Analizler</a></li>
-                <li><a href="training.html">Eğitimler</a></li>
-                <li><a href="data-science.html">Veri Bilimi</a></li>
-                <li><a href="scientific-support.html">Bilimsel Proje Desteği</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i>Anasayfa</a></li>
+                <li class="dropdown">
+                    <a href="services.html">Hizmetlerimiz</a>
+                    <div class="dropdown-content">
+                        <a href="analysis.html">İstatistiksel Analizler</a>
+                        <a href="data-science.html">Veri Bilimi</a>
+                        <a href="training.html">Eğitimler</a>
+                        <a href="scientific-support.html">Danışmanlık</a>
+                        <a href="sdg-report.html">Raporlarımız</a>
+                    </div>
+                </li>
+                <li><a href="projects.html">Projelerimiz</a>
+
                 <li><a href="faq.html">Sıkça Sorulan Sorular (SSS)</a></li>
             </ul>
         </nav>
@@ -133,7 +144,6 @@
 
     <!-- Content -->
     <section class="content">
-        <h2>Sunulan Eğitim Türleri</h2>
         <div class="education-box">
             <div>
                 <h3>📊 Temel İstatistik</h3>
@@ -162,6 +172,22 @@
             <div>
                 <h3>🧮 Aktüerya</h3>
                 <p>Sigorta ve finansal riskleri değerlendirmek için aktüerya teknikleri.</p>
+            </div>
+            <div>
+                <h3>👥 İnsan Kaynakları</h3>
+                <p>İnsan kaynakları yönetimi, işe alım ve çalışan performansını iyileştirme teknikleri.</p>
+            </div>
+            <div>
+                <h3>🏅 Liderlik</h3>
+                <p>Liderlik becerilerini geliştirerek takım yönetimi ve stratejik karar alma süreçlerine yönelik eğitim.</p>
+            </div>
+            <div>
+                <h3>🛠 İş Yönetimi</h3>
+                <p>İş süreçlerini etkin bir şekilde yönetme ve işletme verimliliğini artırma stratejileri.</p>
+            </div>
+            <div>
+                <h3>⏳ Zaman Yönetimi</h3>
+                <p>İşletmelerde verimli zaman yönetimi ve iş süreçlerinin optimize edilmesi.</p>
             </div>
         </div>
     </section>
